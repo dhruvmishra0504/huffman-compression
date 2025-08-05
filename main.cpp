@@ -37,7 +37,7 @@ void huffmanCompress(string text, ofstream &fout) {
         char ch = it->first;
         int f = it->second;
         pq.push(new Node(ch, f));
-    }
+    }   
 
     while (pq.size() > 1) {
         Node *left = pq.top(); pq.pop();
