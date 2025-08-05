@@ -1,1 +1,16 @@
-loda lele
+In the age of information, compression becomes crucial. Huffman coding, a lossless data compression algorithm, shines by assigning variable-length codes to input characters, with shorter codes assigned to more frequent characters.
+
+Consider this: the word “compression” appears multiple times in a text about compression. If we had to store each character in a fixed-length format, like 8 bits per character, we’d waste space. But Huffman coding flips the script. Instead of uniform code lengths, it builds a frequency table, constructs a priority queue, and then assembles a binary tree.
+
+This tree ensures that no code is a prefix of another—making decoding foolproof. The leaf nodes represent characters, and paths from root to leaf encode their binary representations. If 'e' appears 1000 times and 'z' only 5, it’s clear that 'e' deserves a shorter code.
+
+The result? Smaller files, faster transfers, efficient storage. Whether you're zipping logs, sending telemetry data from Mars, or optimizing retro game ROMs, Huffman brings the heat.
+
+Huffman Huffman Huffman. How many times can one say Huffman? Probably as many times as one can appreciate how elegant this algorithm is. Huffman's method doesn’t just save space—it tells a story of data efficiency.
+
+Let's now repeat some characters to simulate compression power:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+sssss sssss sssss sssss sssss sssss sssss sssss sssss sssss sssss sssss
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
