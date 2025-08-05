@@ -1,0 +1,11 @@
+Huffman Codes:
+e: 00
+d: 101
+o: 011
+ : 010
+l: 11
+a: 100
+
+Original size: 72 bits
+Compressed size: 22 bits
+Compressed binary string: 1101110110001011001100
